@@ -1,0 +1,128 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+}
+
+header {
+    background: #00509E;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+.hero {
+    background: #0073E6;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.features .feature {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features .feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.features .feature h3 a {
+    text-decoration: none;
+    color: #00509E;
+    transition: color 0.3s ease;
+}
+
+.features .feature h3 a:hover {
+    color: #0073E6;
+}
+
+footer {
+    text-align: center;
+    background: #003f7f;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.collapsible {
+    background: #00509E;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    outline: none;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+    background: #0073E6;
+}
+
+.content {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
